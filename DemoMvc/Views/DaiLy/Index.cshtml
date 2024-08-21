@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "DaiLy";
+}
+
+<form asp-action="Index">
+    <label>Mã:</label>
+    <input type="text" name="MaDaiLy" /><br>
+    <label>Tên hệ đại lý:</label>
+    <input type="text" name="TenDaiLy" /><br>
+    <label>Địa chỉ:</label>
+    <input type="text" name="DiaChi" /><br>
+    <label>Người đại diện:</label>
+    <input type="text" name="NguoiDaiDien" /><br>
+    <label>Điện thoại:</label>
+    <input type="text" name="DienThoai" /><br>
+    <label>Mã nhà phân phối:</label>
+    <input type="text" name="MaHTPP" /><br>
+    <input type="submit" value="Gửi dữ liệu" />
+</form>
+
+<h1>@ViewData["Message"]</h1>

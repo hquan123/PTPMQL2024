@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Employee";
+}
+
+<form asp-action="Index">
+    <label>ID:</label>
+    <input type="text" name="PersonId" /><br>
+    <label>Name:</label>
+    <input type="text" name="FullName" /><br>
+    <label>Địa chỉ:</label>
+    <input type="text" name="Address" /><br>
+    <label>Id của EmployeeId:</label>
+    <input type="text" name="EmployeeId" /><br>
+    <label>Tuổi:</label>
+    <input type="number" name="Age" /><br>
+    <input type="submit" value="Gửi dữ liệu" />
+</form>
+
+<h1>@ViewData["Message"]</h1>
