@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PTPMQL2024\\DemoMvc\\DemoMvc.csproj": {}
+    "C:\\Users\\QUAN\\Desktop\\PTPMQL2024\\DemoMvc\\DemoMvc.csproj": {}
   },
   "projects": {
-    "C:\\PTPMQL2024\\DemoMvc\\DemoMvc.csproj": {
+    "C:\\Users\\QUAN\\Desktop\\PTPMQL2024\\DemoMvc\\DemoMvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PTPMQL2024\\DemoMvc\\DemoMvc.csproj",
+        "projectUniqueName": "C:\\Users\\QUAN\\Desktop\\PTPMQL2024\\DemoMvc\\DemoMvc.csproj",
         "projectName": "DemoMvc",
-        "projectPath": "C:\\PTPMQL2024\\DemoMvc\\DemoMvc.csproj",
+        "projectPath": "C:\\Users\\QUAN\\Desktop\\PTPMQL2024\\DemoMvc\\DemoMvc.csproj",
         "packagesPath": "C:\\Users\\QUAN\\.nuget\\packages\\",
-        "outputPath": "C:\\PTPMQL2024\\DemoMvc\\obj\\",
+        "outputPath": "C:\\Users\\QUAN\\Desktop\\PTPMQL2024\\DemoMvc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\QUAN\\AppData\\Roaming\\NuGet\\NuGet.Config"

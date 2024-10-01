@@ -16,19 +16,66 @@ namespace DemoMvc.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
 
+            modelBuilder.Entity("DemoMvc.Models.Person", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("CCCD")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasMaxLength(8)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("HoTen")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("QueQuan")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Persons");
+
+                    b.HasDiscriminator().HasValue("Person");
+
+                    b.UseTphMappingStrategy();
+                });
+
             modelBuilder.Entity("DemoMvc.Models.Student", b =>
                 {
                     b.Property<int>("StudentId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Fullname")
+                    b.Property<string>("StudentName")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("StudentId");
 
                     b.ToTable("Student");
+                });
+
+            modelBuilder.Entity("DemoMvc.Models.Employee", b =>
+                {
+                    b.HasBaseType("DemoMvc.Models.Person");
+
+                    b.Property<double>("Luong")
+                        .HasColumnType("REAL");
+
+                    b.Property<int>("NamSinh")
+                        .HasColumnType("INTEGER");
+
+                    b.ToTable("Persons");
+
+                    b.HasDiscriminator().HasValue("Employee");
                 });
 #pragma warning restore 612, 618
         }

@@ -14,6 +14,8 @@ namespace DemoMvc.Data
         }
 
         public DbSet<Student> Students { get; set; }
+        public DbSet<Person> Persons { get; set; }
+        public DbSet<Employee> Employees { get; set; }
         
     }
 }

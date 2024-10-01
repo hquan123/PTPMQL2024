@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Quann")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d236cffdfcef071c00ecaa7bb477520127feb857")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f197516372d7d0a3a7a207c34723211e01e88916")]
 [assembly: System.Reflection.AssemblyProductAttribute("Quann")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Quann")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

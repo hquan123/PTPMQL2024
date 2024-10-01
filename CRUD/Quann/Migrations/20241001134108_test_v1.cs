@@ -5,7 +5,7 @@
 namespace Quann.Migrations
 {
     /// <inheritdoc />
-    public partial class Create_Database : Migration
+    public partial class test_v1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

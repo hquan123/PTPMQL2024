@@ -1,15 +1,47 @@
-﻿@{
-    ViewData["Title"] = "Person";
+@model IEnumerable<DemoMvc.Models.Person>
+
+@{
+    ViewData["Title"] = "Index";
 }
 
-<form asp-action="Index">
-    <label>ID:</label>
-    <input type="text" name="PersonId" />
-    <label>Name:</label>
-    <input type="text" name="FullName" />
-    <label>Địa chỉ:</label>
-    <input type="text" name="Address" />
-    <input type="submit" value="Gửi dữ liệu" />
-</form>
+<h1>Index</h1>
 
-<h1>@ViewData["Message"]</h1>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HoTen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CCCD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QueQuan)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.HoTen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CCCD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QueQuan)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

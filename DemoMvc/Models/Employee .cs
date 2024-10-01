@@ -7,7 +7,8 @@ namespace DemoMvc.Models
 {
     public class Employee : Person
     {
-        public string EmployeeId { get; set; }
-        public int Age { get; set; }
+        public int NamSinh { get; set; }
+
+        public double Luong { get; set; }
     }
 }

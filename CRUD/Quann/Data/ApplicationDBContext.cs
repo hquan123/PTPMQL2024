@@ -1,7 +1,13 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Quann.Models;
 
-public class ApplicationDbContext : DbContext
+namespace Quann.Data
+{
+    public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
@@ -12,3 +18,4 @@ public class ApplicationDbContext : DbContext
         
         //Kết thúc khai báo đối tượng để tạo database
     }
+}
